@@ -8,6 +8,11 @@
   background-size: cover;
 }
 
+.bg-campfire {
+  background: url(/assets/img/jm-campfire2.jpg) center;
+  background-size: cover;
+}
+
 .img-full {
   width: 100%;
   height: 100%;
