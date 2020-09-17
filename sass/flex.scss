@@ -1,0 +1,35 @@
+@mixin flex($direction, $justify, $align, $text) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text;
+}
+
+.align-left-center {
+    @include flex(column, center, flex-start, left);
+}
+
+.align-left-top {
+    @include flex(column, flex-start, flex-start, left);
+}
+
+.align-left-bottom {
+    @include flex(column, flex-end, flex-start, left);
+}
+
+.align-right {
+    @include flex(column, center, flex-end, right);
+}
+
+.align-center-top {
+    @include flex(column, flex-start, center, center);
+}
+
+.align-center {
+    @include flex(column, center, center, center);
+}
+
+.align-center-sm {
+    @include flex(column, center, center, center);
+}
