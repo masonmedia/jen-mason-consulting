@@ -18,6 +18,10 @@
     @include flex(column, flex-end, flex-start, left);
 }
 
+.align-center-bottom {
+    @include flex(column, flex-end, flex-center, center);
+}
+
 .align-right {
     @include flex(column, center, flex-end, right);
 }
