@@ -7,6 +7,6 @@
 //   });
 
   var scroll = new SmoothScroll('a[href*="#"]',{
-    easing: 'easeInQuad',
-    speed: 300
+    easing: 'easeInOutQuad',
+    speed: 500
 });
