@@ -38,17 +38,20 @@
 
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-        <li class="nav-item active">
+        <!-- <li class="nav-item active">
           <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#mission">Mission</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -71,13 +74,17 @@
   </div> -->
   
   <!-- banner 50-50 -->
-  <div class="row m-0 p-0">
-    <div class="col-lg-6 align-left-center bg-sand text-light text-shadow p-5 m-0">
+  <div id="home" class="row m-0 p-0">
+    <div class="col-lg-6 align-left-center bg-sand text-dark p-5 m-0">
       <h1 class="site-title">Jen <span class="d-table">Mason</span> Consulting</h1>
-      <h3 class="py-2">People. Possibility. Purpose.</h3>
+      <h3 class="py-2 text-lowercase">Connect. Collaborate. Create.</h3>
       <div class="inline-block mt-3">
-      <button class="btn btn-light">Learn more</button>
-      <button class="btn btn-dark">Get in touch</button>
+        <a href="#mission"> 
+          <button class="btn btn-light">Learn more</button>
+        </a>
+        <a href="mailto:mason.jennifer.t@gmail.com"> 
+          <button class="btn btn-dark">Get in touch</button>
+        </a>
     </div>
     </div>
     <div class="col-lg-6 p-0 min-50">
@@ -98,21 +105,22 @@
   </div> -->
   <!--end row-->
 
-  <div class="row m-0 p-0 min-100">
+  <div id="mission" class="row m-0 p-0 min-100">
     <div class="col-lg-8 offset-lg-4 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5 my-5">
       <h5 class="text-uppercase font-weight-bold">Mission</h5>
       <h1 class="font-weight-bold">Enabling groups to 
         <span class="playfair font-italic text-info">think,</span>
         <span class="playfair font-italic text-info">learn,</span> and
         <span class="playfair font-italic text-info">work</span> together</h1>
-        <p>I am passionate about supporting learning and positive change in groups of all kinds. Blending over 20 years of experience as an educator and process designer with insights from my Ph.D. research about the role of listening in building resilience in complex, adaptive systems, I work with a sense of both purpose and playfulness. My goal is support effective communication and learning, which will enable your group to achieve its goals and thrive.</p>
+        <p>I am passionate about supporting learning and positive change in groups of all kinds. Blending over 20 years of experience as an educator and process designer with insights from my Ph.D. research about the role of listening in building resilience in complex, adaptive systems, I work with a sense of both purpose and playfulness.</p>
+        <p>My goal is support effective communication and learning, which will enable your group to achieve its goals and thrive.</p>
     </div>
   </div>
 
   <!-- image -->
   <div class="row m-0 p-0">
-    <div class="col-sm-12 p-0 min-50 relative">
-      <img class="img-full absolute z-0" src="./assets/img/jm_silhouette_group.jpeg" alt="">
+    <div class="col-sm-12 p-0 min-100 relative">
+      <img class="img-full absolute z-0" src="./assets/img/jm_hands_bulb.jpeg" alt="">
     </div>
   </div>
 
@@ -136,14 +144,9 @@
   <!-- end row -->
 
   <!-- services -->
-  <div class="row min-100 bg-linen m-0 p-0">
+  <div id="services" class="row min-100 bg-linen m-0 p-0">
     <div class="col-lg-8 offset-lg-4 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5 m-0">
       <h5 class="text-uppercase font-weight-bold">Services</h5>
-      <!-- <h1 class="font-weight-bold">Organizations
-        <span class="playfair font-italic text-info">thrive</span>
-        when they are able to harness the power of
-        <span class="playfair font-italic text-info">diverse ideas</span> and
-        <span class="playfair font-italic text-info">approaches.</span></h1> -->
       <h1 class="font-weight-bold">Healthy systems are those in which there is an
         <span class="playfair font-italic text-info">open flow</span>
         of
@@ -259,5 +262,9 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/offcanvas.js"></script>
+    <script src="/assets/js/smooth-scroll.min.js"></script>
+    <script src="/assets/js/smooth-scroll.polyfills.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js></script> -->
   </body>
 </html>
