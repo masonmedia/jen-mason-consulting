@@ -6,13 +6,9 @@
 //     behavior: 'smooth'
 //   });
 
-// var sal = require('sal.js');
-
 sal();
 
   var scroll = new SmoothScroll('a[href*="#"]',{
     easing: 'easeInOutQuad',
     speed: 500
 });
-
-AOS.init();
