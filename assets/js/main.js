@@ -12,3 +12,8 @@ sal();
     easing: 'easeInOutQuad',
     speed: 500
 });
+
+const menuItem = document.querySelector('.nav-link');
+menuItem.addEventListener('click', function() {
+  document.querySelector('.navbar-collapse').classList.remove('show');
+})
