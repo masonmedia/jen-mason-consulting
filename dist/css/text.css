@@ -1,3 +1,7 @@
+.lh-100 {
+  line-height: 100%;
+}
+
 .site-title {
   font-size: 15vmin;
   font-weight: 900;
@@ -9,7 +13,7 @@
 .section-title {
   font-size: 48px;
   font-weight: 900;
-  line-height: 85%;
+  line-height: 100%;
   letter-spacing: -3px;
   padding: 15px 0;
 }

@@ -1,3 +1,4 @@
+@import url(/Users/andrewmason/Projects/jen_mason_sites/jen_mason_consulting/sass/sal.css);
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&display=swap");
 .min-100 {
   min-height: 100vh;
@@ -90,6 +91,14 @@
   text-align: left;
 }
 
+.align-center-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-center;
+  text-align: center;
+}
+
 .align-right {
   display: flex;
   flex-direction: column;
@@ -132,6 +141,11 @@
   background-size: cover;
 }
 
+.bg-campfire {
+  background: url(/assets/img/campfire.jpg) center;
+  background-size: cover;
+}
+
 .img-full {
   width: 100%;
   height: 100%;
@@ -156,30 +170,6 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23060606' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.site-title {
-  font-size: 15vmin;
-  font-weight: 900;
-  line-height: 85%;
-  letter-spacing: -3px;
-  -webkit-text-stroke: 3px #fff;
-}
-
-.section-title {
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 85%;
-  letter-spacing: -3px;
-  padding: 15px 0;
-}
-
-.playfair {
-  font-family: 'Playfair Display', cursive;
-}
-
-.text-shadow {
-  text-shadow: 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444;
-}
-
 .bg-water {
   background: #88BBD6;
 }
@@ -196,13 +186,55 @@
   background: #cdcdcd;
 }
 
+.bg-sand {
+  background: #DCD2C8;
+}
+
 .navbar-brand {
   font-weight: 900;
+}
+
+.lh-100 {
+  line-height: 100%;
+}
+
+.site-title {
+  font-size: 15vmin;
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -3px;
+  -webkit-text-stroke: 3px #343a40;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -3px;
+  padding: 15px 0;
+}
+
+.playfair {
+  font-family: 'Playfair Display', cursive;
+}
+
+.text-shadow {
+  text-shadow: 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444;
 }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 1400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 h1, h2, h3, h4, h5, h6,
