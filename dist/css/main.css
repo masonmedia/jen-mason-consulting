@@ -204,6 +204,11 @@
   text-align: center;
 }
 
+.bg-bulb {
+  background: url(/assets/img/jm_hands_bulb2.jpeg) center right;
+  background-size: cover;
+}
+
 .bg-wood {
   background: url(/assets/img/banner-wood.jpg) center;
   background-size: cover;
@@ -274,7 +279,7 @@
 }
 
 .site-title {
-  font-size: 15vmin;
+  font-size: 13vmin;
   font-weight: 900;
   line-height: 85%;
   letter-spacing: -3px;
