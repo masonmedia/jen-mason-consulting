@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,UAAU,EAAE,OAAO;CACtB;;AAED,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,OAAO;CACtB;;AAED,AAAA,SAAS,CAAC;EACN,UAAU,EAAE,OAAO;CACtB;;AAED,AAAA,WAAW,CAAC;EACR,UAAU,EAAE,OAAO;CACtB",
-    "sources": [
-        "../../sass/colos.scss"
-    ],
-    "names": [],
-    "file": "colos.css"
-}

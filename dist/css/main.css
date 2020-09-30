@@ -274,6 +274,11 @@
   font-weight: 900;
 }
 
+.navbar-collapse {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .lh-100 {
   line-height: 100%;
 }
