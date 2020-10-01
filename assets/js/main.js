@@ -10,16 +10,18 @@ sal();
 
 AOS.init();
 
-window.onload = function() {
-	lax.setup() 
+$('.aniview').AniView();
 
-	const updateLax = () => {
-		lax.update(window.scrollY)
-		window.requestAnimationFrame(updateLax)
-	}
+// window.onload = function() {
+// 	lax.setup() 
 
-	window.requestAnimationFrame(updateLax)
-}
+// 	const updateLax = () => {
+// 		lax.update(window.scrollY)
+// 		window.requestAnimationFrame(updateLax)
+// 	}
+
+// 	window.requestAnimationFrame(updateLax)
+// }
 
   var scroll = new SmoothScroll('a[href*="#"]',{
     easing: 'easeInOutQuad',
