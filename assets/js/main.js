@@ -11,7 +11,7 @@ sal();
 AOS.init();
 
 window.onload = function() {
-	lax.setup() // init
+	lax.setup() 
 
 	const updateLax = () => {
 		lax.update(window.scrollY)
