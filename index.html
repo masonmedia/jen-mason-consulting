@@ -1,433 +1,56 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Jen Mason">
-    <title>Jen Mason Consulting</title>
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="assets/css/sal.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link href="dist/css/main.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<!-- nav -->
+<html class="no-js" lang="">
 
-<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"
-      data-sal="slide-down"
-      data-sal-duration="1000"
-      data-sal-delay="100"
-      data-sal-easing="ease-out-back">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">jen mason consulting</a>
-    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-      <span class="">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z"/>
-        <line x1="12" y1="5" x2="12" y2="19" />
-        <line x1="5" y1="12" x2="19" y2="12" />
-      </svg>
-      </span>
-    </button>
-    offcanvas-collapse
-    <div class="navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#mission">Mission</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">jen mason consulting</a>
-    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="">
-          <!-- plus icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z"/>
-          <line x1="12" y1="5" x2="12" y2="19" />
-          <line x1="5" y1="12" x2="19" y2="12" />
-        </svg>
-        </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#mission">Mission</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<main class="container-fluid p-0">
-  <!-- banner 50-50 -->
-  <div id="home" class="row m-0 p-0">
-    <div class="col-lg-6 align-left-bottom bg-sand text-dark p-5 m-0">
-      <h1 class="site-title animate__animated animate__fadeInDown">Jen 
-      <span class="d-table animate__animated animate__fadeInLeft">Mason</span> 
-      <span class="d-table animate__animated animate__fadeInRight">Consulting</span> 
-      </h1>
-      <h3 class="py-2 text-lowercase animate__animated animate__zoomIn">Connect. Collaborate. Create.</h3>
-      <div class="inline-block my-3 animate__animated animate__fadeInUp">
-        <a href="#mission"> 
-          <button class="btn btn-light">Learn more</button>
-        </a>
-        <a href="mailto:mason.jennifer.t@gmail.com"> 
-          <button class="btn btn-dark">Get in touch</button>
-        </a>
-      </div>
-    </div>
-    <div class="col-lg-6 p-0 min-50">
-      <img class="img-full" 
-      src="./assets/img/jm-rocks-crop.jpg" 
-      alt="">
-    </div>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="bg-warning">
+  <!-- Add your site or application content here -->
+  <h1 class="display-1" data-aos="fade-down">
+    Jen Mason Consulting
+  </h1>
+  <p data-aos="slide-right">Hello world! This is HTML5 Boilerplate.</p>
   </div>
 
-  <!-- mission -->
-  <div id="mission" class="row m-0 p-0 min-100">
-    <div class="col-lg-8 offset-lg-4 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5">
-      <h5 class="text-uppercase font-weight-bold"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Mission</h5>
-      <h1 class="section-title lh-100"
-      style="line-height: 100%;"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Enabling groups <br />to 
-        <span class="playfair text-info">think,</span>
-        <span class="playfair text-info">learn,</span> and
-        <span class="playfair text-info">work</span> together</h1>
-        <p data-sal="slide-up"
-        data-sal-duration="2000"
-        data-sal-delay="400"
-        data-sal-easing="ease-out-back">I am passionate about supporting learning and positive change in groups of all kinds. Blending over 20 years of experience as an educator and process designer with insights from my PhD research about the role of listening in building resilience in complex, adaptive systems, I work with a sense of both purpose and playfulness.</p>
-        <p data-sal="slide-up"
-        data-sal-duration="2000"
-        data-sal-delay="600"
-        data-sal-easing="ease-out-back">My goal is support effective communication and learning, which will enable your group to achieve its goals and thrive.</p>
-        <a href="#services"
-        data-sal="slide-up"
-        data-sal-duration="2000"
-        data-sal-delay="800"
-        data-sal-easing="ease-out-back">
-          <button class="btn btn-info shadow mt-3">What I Do</button>
-        </a>
-    </div>
-  </div>
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-  <!-- image -->
-  <div class="row m-0 p-0 relative">
-    <div class="col-sm-12 p-0 min-100">
-      <img src="assets/img/jm_hands_bulb2.jpeg" class="img-full absolute z-0">
-    </div>
-  </div>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
 
-  <!-- services -->
-  <div id="services" class="row min-100 bg-linen m-0 p-0">
-    <div class="col-lg-8 offset-lg-4 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5 m-0">
-      <h5 class="text-uppercase font-weight-bold"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Services</h5>
-      <h1 class="section-title""
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Healthy systems are those in which there is an
-      <span class="playfair text-info">open flow</span>
-      of
-      <span class="playfair text-info">information</span> and
-      <span class="playfair text-info">ideas.</span></h1>
-      <p data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">Drawing on over 20 years of experience as an educator, process designer, and facilitator, I offer a number of services to meet groups where they are and support them in opening the pathways of communication. I help groups to enable the flow of information and ideas and maximize their potential. These services include
-       <span class="text-info font-weight-bold">conflict resolution</span>, 
-       <span class="text-info font-weight-bold">listening and perspective-taking workshops</span>,
-       <span class="text-info font-weight-bold">facilitated practice dialogues</span>,
-       <span class="text-info font-weight-bold">team-building and group facilitation</span>, and
-       <span class="text-info font-weight-bold">team-building nature retreats</span>. *Please note that all of my offerings are currently virtual due to COVID-19.</p> 
-      <a href="#service-description"
-      data-sal="slide-up"
-        data-sal-duration="2000"
-        data-sal-delay="600"
-        data-sal-easing="ease-out-back">
-        <button class="btn btn-info shadow mt-3">Learn more</button>
-      </a>
-    </div>
-  </div><!--end row-->
-  
-  <!-- individual services -->
-
-  <div id="service-description" class="row min-100 m-0 p-0">
-    <div class="col-lg-6 min-50 align-left-center p-5 m-0">
-      <h6 class="text-uppercase small"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Address and transform conflicts within your group to get unstuck</h6>
-      <h1 class="section-title"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Conflict Resolution</h1> 
-      <p 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">A key step in optimizing the effectiveness of your group is to address and move through conflicts large and small that create blocks to the flow of information and ideas. Using a process developed by master facilitator, Linda Lehtonen, I can help your group work through the issues that limit its effectiveness and give your team tools to address and resolve their own communication challenges going forward.</p>
-    </div>
-    <div class="col-lg-6 min-50 p-0">
-      <img class="img-full" 
-      data-sal="fade"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back"
-      src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-    </div>
-  </div><!--end row-->
-
-  <div class="row min-100 m-0 p-0 bg-linen">
-    <div class="col-lg-6 min-50 p-0">
-      <img class="img-full" 
-      data-sal="fade"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back"
-      src="./assets/img/jm-hand-crystal.jpg" alt="">
-    </div>
-    <div class="col-lg-6 align-left-center p-5 m-0">
-      <h6 class="text-uppercase small" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Develop capacity to engage with people who think differently than you do</h6>
-      <h1 class="section-title" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Listening & Perspective-Taking Workshops</h1> 
-      <p 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">Based on insights from my PhD dissertation research, I can help your group improve the capacity to listen to, learn from, and work with others, including those who think differently. Participants will build self-awareness and use this awareness to manage their own reactivity in the face of different views, ideas, or ways of doing things and by so doing, open to new ways of listening and engaging with others.</p>
-    </div>
-  </div><!--end row-->
-
-  <!-- service 3 -->
-  <div class="row min-100 m-0 p-0">
-    <div class="col-lg-6 min-50 align-left-center p-5 m-0">
-      <h6 class="text-uppercase small" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Practice your listening and perspective-taking skills in a facilitated setting</h6>
-      <h1 class="section-title" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Facilitated Practice Dialogues</h1> 
-      <p 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">Using skills developed in the Listening and Perspective-Taking workshops, groups can participate in facilitated practice dialogues on a range of topics to solidify their skills and explore ideas collectively.</p>
-    </div>
-    <div class="col-lg-6 min-50 p-0">
-      <img class="img-full" 
-      data-sal="fade"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back"
-      src="./assets/img/jm_group_dialogue.png" alt="">
-    </div>
-  </div><!--end row-->
-
-  <div class="row min-100 m-0 p-0 bg-linen">
-    <div class="col-lg-6 min-50 p-0">
-      <img class="img-full" 
-      data-sal="fade"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back"
-      src="./assets/img/jm_facilitation.jpeg" alt="">
-    </div>
-    <div class="col-lg-6 align-left-center p-5 m-0">
-      <h6 class="text-uppercase small" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Engage, explore, decide, create</h6>
-      <h1 class="section-title" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Team Building & Group Facilitation</h1> 
-      <p 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">I offer both team-building and group facilitation services. Enhance connection and trust in your group or team through a variety of fun and reflective team-building experiences that are customized to your particular needs.  Take action with your team in a variety of facilitated process (including Bohmian dialogue, Future Search, The Way of Council, Open Space, Focused Conversations, World Café, and others) that will help you assess needs, develop and explore ideas, and make decisions.</p>
-    </div>
-  </div><!--end row-->
-  
-  <div class="row min-100 m-0 p-0">
-    <div class="col-lg-6 min-50 align-left-center p-5 m-0">
-      <h6 class="text-uppercase small" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Connect with your team in a restorative natural setting</h6>
-      <h1 class="section-title" 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Team Development Retreats in Natural Settings</h1> 
-      <p 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">Drawing on my experience as an outdoor, experiential, and adventure educator, I can design one or multi-day retreats to meet the needs of your group. Away from the demands of the day-to-day, and located in beautiful, natural settings, retreats can incorporate and blend any of the services I offer and include team building and nature connection experiences to help your group ground/connect/transform.</p>
-    </div>
-    <div class="col-lg-6 min-50 p-0 relative">
-      <img class="img-full absolute z-0" 
-      data-sal="fade"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back"
-      src="./assets/img/jm-campfire.jpg" alt="Campfire on a starry night symbolizing the outdoor experiential team development retreats offered by Jen Mason.">
-    </div>
-  </div><!--end row-->
-
-  <!-- <div class="align-center p-3 min-100 shadow-lg" 
-    style="background: url(./assets/img/jm_headshot.jpeg) center left; background-size: cover;"
-    data-sal="slide-up"
-    data-sal-duration="2000"
-    data-sal-easing="ease-out-back"></div> -->
-  
-  <!-- about -->
-  <div id="about" class="row min-100 bg-linen m-0 p-0">
-    <div class="col-lg-8 offset-lg-4 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5 m-0">
-      <!-- <div class="align-center mb-4 p-3 shadow-lg" 
-      style="background: url(./assets/img/jm_headshot.jpeg) center left; background-size: cover; height: 250px; width: 250px; border-radius: 20px;"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back"></div> -->
-      <h5 class="text-uppercase font-weight-bold"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">About Jen</h5>
-      <h1 class="section-title"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">I love building
-        <span class="playfair text-info">community</span> and
-        <span class="playfair text-info">connection</span> with groups to help them think better together.</h1>
-        <p data-sal="slide-up"
-        data-sal-duration="2000"
-        data-sal-delay="600"
-        data-sal-easing="ease-out-back">I have worked as an educator and process designer for over 20 years with people of all ages and in all kinds of settings. I have a PhD in Sustainability Education and an MA in Education from Prescott College, as well as a BEd and a BA in Political Science from Queen’s University. My work and research sit at the confluence of resilience and complexity theory, whole-system change, dialogue theory and practice, organizational learning, mindfulness, transformative learning theory, experiential education, and nature connection. Bringing my love of learning and a deep sense of humility, I work with thoughtful purpose and infectious playfulness. I’d love to connect with you to find out how I can support you and your team/organization/community.</p>
-      <div class="py-3"
-        data-sal="slide-up"
-        data-sal-duration="2000"
-        data-sal-delay="800"
-        data-sal-easing="ease-out-back">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#17a2b8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-        </div>
-    </div>
-  </div><!--end row-->
-
-  <div class="align-center p-3 min-100 shadow-lg" 
-  style="background: url(./assets/img/jm_headshot.jpeg) center left; background-size: cover;"
-  data-sal="fade"
-  data-sal-duration="2000"
-  data-sal-easing="ease-out-back"></div>
-
-  <!-- contact cta -->
-  <div id="contact" class="row p-0 m-0 bg-dark">
-    <div class="col-sm-12 p-5 text-light align-center">
-      <h1 class="font-weight-bold"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">Get in touch!</h1>
-      <p 
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="200"
-      data-sal-easing="ease-out-back">Drop me a line for more information or to discuss your next project.</p>
-      <a href="mailto:mason.jennifer.t@gmail.com"
-      data-sal="slide-up"
-      data-sal-duration="2000"
-      data-sal-delay="400"
-      data-sal-easing="ease-out-back">
-        <button class="btn btn-info">Contact</button>
-      </a>
-    </div>
-  </div>
-
-  <!-- image -->
-  <div class="row m-0 p-0">
-      <div class="col-sm-12 p-0 min-50 relative">
-        <img class="img-full absolute z-0" 
-        data-sal="fade"
-        data-sal-duration="2000"
-        data-sal-easing="ease-out-back"
-        src="./assets/img/jm_jumping_beach.jpg" alt="A group jumping on a beach at sunset signifying teamwork, joy, and cameraderie.">
-      </div>
-    </div>
-  
-  <!-- footer -->
-  <footer>
-  <div class="row p-0 m-0 bg-dark">
-    <div class="col-sm-12 p-5 align-center-bottom text-light">
-      <p id="copyright" class="m-0 font-weight-bold"></p>
-    </div>
-  </div>
-</footer>
-
-  </div><!-- end container-->
-</main>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="assets/js/smooth-scroll.min.js"></script>
-    <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/sal.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
 </html>
