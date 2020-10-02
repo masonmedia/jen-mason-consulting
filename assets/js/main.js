@@ -1,16 +1,13 @@
-sal();
-
 AOS.init();
 
-  var scroll = new SmoothScroll('a[href*="#"]',{
+var scroll = new SmoothScroll('a[href*="#"]',{
     easing: 'easeInOutQuad',
     speed: 500
 });
 
-const menuItem = document.querySelector('.nav-link');
-menuItem.addEventListener('click', function() {
-  document.querySelector('.navbar-collapse').classList.remove('show');
-})
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 
 // copyright get current year
   const d = new Date();
