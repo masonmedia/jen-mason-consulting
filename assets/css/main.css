@@ -418,6 +418,20 @@ textarea {
   text-shadow: 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444;
 }
 
+/* media queries */
+
+@media (max-width: 992px) {
+  .order-1-md {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .order-12-md {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+}
 
 /* ==========================================================================
    Helper classes
