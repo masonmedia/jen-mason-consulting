@@ -329,11 +329,6 @@ textarea {
   background-size: cover;
 }
 
-.bg-campfire {
-  background: url(/assets/img/campfire.jpg) center;
-  background-size: cover;
-}
-
 .bg-headshot {
   background: url(/assets/img/jm_headshot.jpeg) center left; background-size: cover;
 }
