@@ -314,6 +314,22 @@ textarea {
   text-align: center;
 }
 
+/* images */
+
+/* lazyloading */
+
+/* fade image in after load */
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: 1;
+  transition: opacity 300ms;
+  background: #f7f7f7;
+}
+
+
 .bg-bulb {
   background: url(/assets/img/jm_hands_bulb.jpeg) center right;
   background-size: cover;
