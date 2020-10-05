@@ -114,6 +114,10 @@ textarea {
   min-height: 100vh;
 }
 
+.min-100-lg {
+  min-height: 100vh;
+}
+
 .min-50 {
   min-height: 50vh;
 }
@@ -130,6 +134,9 @@ textarea {
 @media (max-width: 601px) {
   .min-100 {
     min-height: 600px;
+  }
+  .min-100-lg {
+    min-height: 50vh;
   }
   .min-700-lg {
     min-height: 600px;
@@ -410,6 +417,11 @@ textarea {
   letter-spacing: -3px;
   margin: 0;
   -webkit-text-stroke: 3px #343a40;
+}
+
+.site-sub-title {
+  letter-spacing: -1px;
+  line-height: 100%;
 }
 
 .section-title {
