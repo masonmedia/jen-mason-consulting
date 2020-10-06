@@ -78,6 +78,8 @@ textarea {
    body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     max-width: 1400px;
+    width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
     -webkit-animation: fadeIn 1s ease-in-out;
             animation: fadeIn 1s ease-in-out;
@@ -116,6 +118,10 @@ textarea {
 
 .min-100-lg {
   min-height: 100vh;
+}
+
+.min-75 {
+  min-height: 75vh;
 }
 
 .min-50 {
@@ -338,7 +344,7 @@ textarea {
 
 
 .bg-bulb {
-  background: url(/assets/img/jm_hands_bulb.jpeg) center right;
+  background: url(/assets/img/jm_hands_bulb.jpeg) center;
   background-size: cover;
 }
 
@@ -453,6 +459,12 @@ textarea {
     -webkit-box-ordinal-group: 13;
         -ms-flex-order: 12;
             order: 12;
+  }
+}
+
+@media (max-width: 601px) {
+  .bg-bulb {
+    background: url(/assets/img/jm_hands_bulb.jpeg) 85% 100% no-repeat;
   }
 }
 
