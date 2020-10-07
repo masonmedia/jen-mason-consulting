@@ -9,12 +9,13 @@
 
   <meta property="og:title" content="Jen Mason Consulting">
   <meta property="og:type" content="Website">
-  <meta property="og:url" content="">
+  <meta property="og:url" content="jenmasonconsulting.ca">
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/png" href="fav1.png">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -62,8 +63,12 @@
 
     <main class="container-fluid p-0">
         <!-- banner 50-50 -->
-        <div id="home" class="row m-0 p-0 pt-4 min-100">
-          <div class="col-lg-6 align-left-bottom min-75 bg-sand text-dark p-5 m-0">
+        <div id="home" class="row m-0 p-0 pt-4 min-100 bg-dark">
+          <div class="col-lg-6 align-left-bottom min-75 text-dark p-5 m-0">
+            <div class="bg-sand absolute z-0 left bottom w-100 h-100"
+            data-aos="slide-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"></div>
             <h1 class="site-title mb-0 mt-5"
             data-aos="fade-up"
             data-aos-duration="2000"
@@ -90,22 +95,25 @@
             data-aos-duration="2000"
             data-aos-easing="ease-out-back">
               <a href="#mission"> 
-                <button class="btn btn-light">Learn more</button>
+                <button class="btn btn-light shadow">Learn more</button>
               </a>
               <a href="mailto:mason.jennifer.t@gmail.com"> 
-                <button class="btn btn-dark">Get in touch</button>
+                <button class="btn btn-dark shadow">Get in touch</button>
               </a>
             </div>
           </div>
           <div class="col-lg-6 p-0 min-50">
-            <img class="img-full lazyload" 
+            <img class="img-full lazyload"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out" 
             data-src="./assets/img/jm-rocks-crop.jpg" 
             alt="Photograph of small stones arranged in a circle signifying unity, harmony, and interconnectedness.">
           </div>
         </div>
 
         <!-- mission -->
-    <div class="row m-0 p-0 min-100">
+    <div id="mission" class="row m-0 p-0 min-100">
       <div class="col-lg-8 offset-lg-4 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5">
         <h5 class="text-uppercase font-weight-bold"
         data-aos="fade-up"
