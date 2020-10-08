@@ -347,7 +347,8 @@ textarea {
 /* background imgs */
 
 .bg-bulb {
-  background: url(/assets/img/jm_hands_bulb.jpeg) center;
+  background: url(/assets/img/jm_hands_bulb.jpeg);
+  background-position: center;
   background-size: cover;
 }
 
@@ -482,8 +483,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media (max-width: 601px) {
   .bg-bulb {
-    background: url(/assets/img/jm_hands_bulb.jpeg) 85% 100% no-repeat;
+    background-position: 85% 100%;
   }
+
 }
 
 /* ==========================================================================
