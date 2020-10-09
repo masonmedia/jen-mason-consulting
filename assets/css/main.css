@@ -430,6 +430,10 @@ textarea {
   font-weight: 900;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1);
+}
+
 /* text */
 
 .site-title {
