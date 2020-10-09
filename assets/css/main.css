@@ -484,6 +484,10 @@ textarea {
 }
 
 @media (max-width: 601px) {
+  .site-title {
+    font-size: 15vmin;
+    letter-spacing: -1px;
+  }
   .bg-bulb {
     background-position: 85% 100%;
   }
