@@ -424,13 +424,13 @@ textarea {
   background: linear-gradient(to right, #ffffff 0%, #dcd2cb 100%);
 }
 
+/* menu */
+
 .navbar-brand {
   font-weight: 900;
 }
 
-.lh-100 {
-  line-height: 100%;
-}
+/* text */
 
 .site-title {
   font-size: 13vmin;
@@ -439,11 +439,13 @@ textarea {
   letter-spacing: -3px;
   margin: 0;
   -webkit-text-stroke: 3px #343a40;
+  text-shadow: 1px 1px 5px #DCD2C8, 3px 3px 10px #DCD2C8, 6px 6px 5px #DCD2C8;
 }
 
 .site-sub-title {
   letter-spacing: -1px;
   line-height: 100%;
+  text-shadow: 1px 1px 5px #DCD2C8, 3px 3px 10px #DCD2C8, 6px 6px 5px #DCD2C8;
 }
 
 .section-title {
@@ -491,7 +493,7 @@ textarea {
 @media (max-width: 601px) {
   .site-title {
     font-size: 15vmin;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
   }
   p {
     font-size: 19px;
