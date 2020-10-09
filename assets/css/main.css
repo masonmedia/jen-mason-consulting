@@ -421,6 +421,7 @@ textarea {
 
 .bg-sand {
   background: #DCD2C8;
+  background: linear-gradient(to right, #ffffff 0%, #dcd2cb 100%);
 }
 
 .navbar-brand {
