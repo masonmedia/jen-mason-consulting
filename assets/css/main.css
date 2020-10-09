@@ -465,6 +465,10 @@ textarea {
 /* media queries */
 
 @media (max-width: 992px) {
+  .nav-link {
+    border-bottom: 1px solid grey;   
+    padding: 16px 0;
+  }
   .order-1-md {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
