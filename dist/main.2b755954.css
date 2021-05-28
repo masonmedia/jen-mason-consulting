@@ -349,29 +349,29 @@ textarea {
 /* background imgs */
 
 .bg-banner {
-  background: url(/assets/img/jm-rocks-crop.jpg);
+  background: url(/jm-rocks-crop.34afda3b.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .bg-bulb {
-  background: url(/assets/img/jm_hands_bulb.jpeg);
+  background: url(/jm_hands_bulb.47dfd46d.jpeg);
   background-position: center;
   background-size: cover;
 }
 
 .bg-wood {
-  background: url(/assets/img/banner-wood.jpg) center;
+  background: url(/banner-wood.53eb89c4.jpg) center;
   background-size: cover;
 }
 
 .bg-rocks {
-  background: url(/assets/img/jm-rocks-crop.jpg) center;
+  background: url(/jm-rocks-crop.34afda3b.jpg) center;
   background-size: cover;
 }
 
 .bg-headshot {
-  background: url(/assets/img/jm_headshot.jpg) center left; background-size: cover;
+  background: url(/jm_headshot.bfe888d9.jpg) center left; background-size: cover;
 }
 
 /* svg texture backgrounds */
@@ -688,3 +688,6 @@ textarea {
   }
 }
 
+
+
+/*# sourceMappingURL=/main.2b755954.css.map */
