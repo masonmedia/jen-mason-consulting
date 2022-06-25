@@ -11,4 +11,4 @@ $('.navbar-nav>li>a').on('click', function(){
 
 // copyright get current year
   const d = new Date();
-  document.querySelector("#copyright").innerHTML = "&copy; Jen Mason Consulting " + d.getFullYear();
+  document.getElementById("copyright").innerHTML = "&copy; Jen Mason Consulting " + d.getFullYear();

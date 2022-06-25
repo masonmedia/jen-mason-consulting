@@ -128,8 +128,8 @@ $('.navbar-nav>li>a').on('click', function () {
 }); // copyright get current year
 
 var d = new Date();
-document.querySelector("#copyright").innerHTML = "&copy; Jen Mason Consulting " + d.getFullYear();
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+document.getElementById("copyright").innerHTML = "&copy; Jen Mason Consulting " + d.getFullYear();
+},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -157,7 +157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53385" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53750" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -333,5 +333,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/js/main.js"], null)
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/js/main.js"], null)
 //# sourceMappingURL=/main.cea5deef.js.map
