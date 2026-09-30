@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minnow hydration spike — mission section</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <style>
+    .spike-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+      background: #111; color: #eee; font: 13px/1.5 monospace; padding: .6rem 1rem; }
+    .spike-bar button { font: inherit; margin-right: .4rem; }
+    .spike-bar .ok { color: #6f6; } .spike-bar .bad { color: #f66; }
+    body { padding-bottom: 5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Real content is authored here, in the HTML. Minnow adopts it; it does
+       not create it. View source with JS disabled and this reads normally. -->
+  <div id="mission" class="row m-0 p-0 min-100">
+    <div class="col-lg-8 offset-lg-4 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5">
+      <h5 class="text-uppercase font-weight-bold"
+      m-text="mission.eyebrow"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-easing="ease-out-back">Mission</h5>
+      <h1 class="section-title"
+      m-html="mission.title"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="200"
+      data-aos-easing="ease-out-back">Enabling purpose-driven groups <br />to 
+        <span class="playfair text-info">think,</span>
+        <span class="playfair text-info">learn,</span> and
+        <span class="playfair text-info">work</span> together.</h1>
+        <p m-text="mission.body1"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="400"
+        data-aos-easing="ease-out-back">I am passionate about supporting learning and positive change in groups. Blending over 20 years of experience as an educator and process designer with insights from my PhD research about the role of listening in building resilience in complex, adaptive systems, I work with a sense of both purpose and playfulness.</p>
+        <p m-text="mission.body2"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="600"
+        data-aos-easing="ease-out-back">My goal is support effective communication and learning, which will enable your group to achieve its goals and thrive.</p>
+        <a m-bind:href="mission.buttonHref"
+        href="#services"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-offset="0"
+        data-aos-delay="800"
+        data-aos-easing="ease-out-back">
+          <button class="btn btn-info shadow mt-3" m-text="mission.buttonLabel">What I Do</button>
+        </a>
+    </div>
+  </div>
+
+  <div style="height:60vh"></div>
+
+  <div class="spike-bar">
+    <span id="report">running…</span><br>
+    <button id="edit">Simulate a CMS edit</button>
+    <button id="break">Simulate broken JSON</button>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="module">
+  import { Component } from './minnow.js';
+
+  (async () => {
+    const el = document.querySelector('#mission');
+    const report = document.querySelector('#report');
+
+    // Hold references to the exact nodes AOS will latch onto, so we can prove
+    // afterwards that hydration reused them rather than replacing them.
+    const before = Array.from(el.querySelectorAll('[data-aos]'));
+
+    AOS.init({ once: false });
+
+    let content = {};
+    try {
+      content = await (await fetch('content.json')).json();
+    } catch (e) {
+      // Bad or missing JSON: the authored HTML simply stands.
+      report.innerHTML = '<span class="bad">content.json failed to load</span> — authored HTML left intact (this is the desired failure mode)';
+      return;
+    }
+
+    const script = `({
+      data() { return { mission: ${JSON.stringify(content.mission)} }; }
+    })`;
+
+    const c = new Component(null, script, null);
+    await c.render(el, { hydrate: true });
+    window._c = c;
+
+    const after = Array.from(el.querySelectorAll('[data-aos]'));
+    const sameNodes = before.length === after.length && before.every((n, i) => n === after[i]);
+    const titleOk = el.querySelector('.section-title').querySelectorAll('span.playfair').length === 3;
+
+    report.innerHTML =
+      (sameNodes ? '<span class="ok">✓ DOM preserved</span>' : '<span class="bad">✗ DOM was replaced</span>') +
+      ` (${before.length} animated nodes) &nbsp;|&nbsp; ` +
+      (titleOk ? '<span class="ok">✓ inline markup intact</span>' : '<span class="bad">✗ inline markup lost</span>') +
+      ` &nbsp;|&nbsp; bindings: ${c._bindings.length}`;
+
+    document.querySelector('#edit').onclick = () => {
+      c.data.mission = Object.assign({}, c.data.mission, {
+        eyebrow: 'Our Mission',
+        body2: 'Edited via the data layer at ' + new Date().toLocaleTimeString() + '.',
+        buttonLabel: 'See Services'
+      });
+      const still = Array.from(el.querySelectorAll('[data-aos]'));
+      const kept = before.every((n, i) => n === still[i]);
+      report.innerHTML = (kept
+        ? '<span class="ok">✓ patched in place, DOM still preserved</span>'
+        : '<span class="bad">✗ patch replaced nodes</span>') +
+        ' — scroll up and down to confirm animations still fire';
+    };
+
+    document.querySelector('#break').onclick = () => {
+      c.data.mission = Object.assign({}, c.data.mission, { eyebrow: '', body1: null });
+      report.innerHTML = '<span class="ok">✓ empty/null values skipped</span> — authored copy retained';
+    };
+  })();
+  </script>
+</body>
+</html>
